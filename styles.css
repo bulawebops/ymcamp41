@@ -13,6 +13,34 @@ body {
   background: #f0f4f8;
   color: #1a202c;
   line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Full-page blended camp background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(240, 244, 248, 0.42), rgba(240, 244, 248, 0.48)),
+    url("fun-camp.png") center center / cover no-repeat;
+  z-index: -2;
+}
+
+/* Optional extra soft tint for polish */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 71, 49, 0.10),
+    rgba(56, 161, 105, 0.06)
+  );
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* ---- Header ---- */
