@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lehi Utah 3rd Stake Young Men Camp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>⛺ Young Men Camp 2026</h1>
+      <p class="stake-name">Lehi Utah 3rd Stake</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Camp Details -->
+    <section class="card">
+      <h2>Camp Information</h2>
+      <p>
+        We are excited to announce the <strong>Lehi Utah 3rd Stake Young Men Camp</strong>!
+        This is a fantastic opportunity for young men to grow together in faith,
+        develop character, and make lifelong memories in the great outdoors.
+      </p>
+      <ul class="info-list">
+        <li>
+          <span class="icon">📍</span>
+          <span><strong>Location:</strong> Previously Camp Atoka in Huntsville Utah. New location is pending due to the increasing numbers of Young Men attending this camp.</span>
+        </li>
+        <li>
+          <span class="icon">🗓️</span>
+          <span><strong>Date:</strong> June 29 - July 2, 2026</span>
+        </li>
+        <li>
+          <span class="icon">👤</span>
+          <span><strong>Who:</strong> All young men in the Lehi Utah 3rd Stake</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Fee Section -->
+    <section class="card card-fee">
+      <h2>💵 Camp Fee</h2>
+      <div class="fee-amount">$10 <span class="per-person">per young man</span></div>
+      <p>
+        The camp fee covers meals, activities, and a <strong>camp t-shirt</strong>.
+        Please submit payment to your ward Young Men leader or bishopric representative.
+      </p>
+      <div class="deadline-reminder">
+        <span class="icon">⚠️</span>
+        <strong>Deadline: Sunday, April&nbsp;12</strong> — all payments must be in by this date.
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="card card-register">
+      <h2>📝 Camp Registration</h2>
+      <p>
+        Use this form to register youth who are committing to attend camp and pay the
+        <strong>$10 fee</strong>.
+      </p>
+
+      <form action="https://formsubmit.co/lehi41st@gmail.com" method="POST">
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="youthName">Youth Name</label>
+            <input type="text" id="youthName" name="youthName" placeholder="Enter full name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="shirtSize">T-Shirt Size</label>
+            <select id="shirtSize" name="shirtSize" required>
+              <option value="">Select a size</option>
+              <option>S — Small</option>
+              <option>M — Medium</option>
+              <option>L — Large</option>
+              <option>XL — X-Large</option>
+              <option>XXL — 2X-Large</option>
+              <option>XXXL — 3X-Large</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-row">
+            <input type="checkbox" id="commitment" name="commitment" required />
+            <span>I commit to attending Young Men Camp.</span>
+          </label>
+
+          <label class="checkbox-row">
+            <input type="checkbox" id="paymentCommitment" name="paymentCommitment" required />
+            <span>I understand the <strong>$10 camp fee</strong> is required and will be paid by the deadline.</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="register-button">Register for Camp</button>
+          
+        </div>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+        <p>
+            <input type="hidden" name="_subject" value="New Camp Registration">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+        </p>
+      </form>
+    </section>
+
+
+    <!-- Questions -->
+    <section class="card card-questions">
+      <h2>❓ Questions?</h2>
+      <p>
+        Please contact your ward's Young Men president or bishopric for more
+        information. You can also reach out to your Stake Young Men presidency.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Lehi Utah 3rd Stake &mdash; Young Men Camp 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
