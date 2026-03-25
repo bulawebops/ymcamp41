@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lehi 41st YM Camp Registration</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #2b6cb0;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #4a5568;
+      font-size: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      color: #2d3748;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #bee3f8;
+      padding-bottom: 0.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 0.4rem;
+    }
+
+    label .required {
+      color: #e53e3e;
+      margin-left: 2px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 0.6rem 0.85rem;
+      border: 1.5px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: #2d3748;
+      background: #f7fafc;
+      transition: border-color 0.2s;
+      appearance: auto;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #4299e1;
+      background: #fff;
+    }
+
+    .fee-section {
+      background: #ebf8ff;
+      border: 1.5px solid #90cdf4;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .fee-section p.fee-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2b6cb0;
+      margin-bottom: 0.75rem;
+    }
+
+    .fee-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .fee-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .fee-option input[type="radio"] {
+      accent-color: #2b6cb0;
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 0.85rem;
+      background: #2b6cb0;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 0.5rem;
+    }
+
+    .btn-submit:hover { background: #2c5282; }
+    .btn-submit:active { transform: scale(0.98); }
+
+    .note {
+      margin-top: 1.25rem;
+      font-size: 0.82rem;
+      color: #718096;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #a0aec0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⛺ Lehi 41st YM Camp</h1>
+    <p>Stake Young Men's Camp Registration</p>
+  </header>
+
+  <div class="card">
+    <h2>Attendance Registration</h2>
+
+    <!-- ⚠️ SETUP REQUIRED: Replace YOUR_FORM_ID with your Formspree form ID.
+         Sign up at https://formspree.io using lehi41st@gmail.com, create a form,
+         and paste the ID here before deploying. -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <!-- Formspree options -->
+      <input type="hidden" name="_subject" value="YM Camp Registration" />
+      <!-- Send a copy to the ward email for every submission -->
+      <input type="hidden" name="_cc" value="lehi41st@gmail.com" />
+
+      <div class="form-group">
+        <label for="first_name">First Name <span class="required">*</span></label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="last_name">Last Name <span class="required">*</span></label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter last name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="role">Attending as <span class="required">*</span></label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Select one…</option>
+          <option value="youth">Youth</option>
+          <option value="leader">Leader / Adult</option>
+        </select>
+      </div>
+
+      <div class="fee-section">
+        <p class="fee-label">💵 $10 Camp Fee</p>
+        <div class="fee-options">
+          <label class="fee-option">
+            <input type="radio" name="fee_submitted" value="yes" required />
+            Yes — I have submitted the $10 fee
+          </label>
+          <label class="fee-option">
+            <input type="radio" name="fee_submitted" value="no" required />
+            No — I will submit the fee later
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Registration</button>
+
+      <p class="note">
+        A confirmation will be sent to lehi41st@gmail.com.<br />
+        Please contact your leader if you have any questions.
+      </p>
+    </form>
+  </div>
+
+  <footer>&copy; 2025 Lehi 41st Ward Young Men</footer>
+
+</body>
+</html>
