@@ -1,5 +1,5 @@
-# ymcamp41
-Lehi 41st YM Camp Information for Stake YM Camp
+# Lehi Utah 3rd Stake Young Men Camp
+Lehi 41st YM Camp Attendees
 
 Adult Size T-shirt (14 youth)
 1) Marvin Uyema - Small
