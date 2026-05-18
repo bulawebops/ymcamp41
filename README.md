@@ -1,7 +1,7 @@
 # Lehi Utah 3rd Stake Young Men Camp
 Lehi 41st YM Camp Attendees
 
-Adult Size T-shirt (13 youth)
+Adult Size T-shirt (16 youth)
 1) Marvin Uyema - Small (email invite sent)
 2) Connor Vea - Large (email invite sent)
 3) Atlas Militoni - Large (email invite sent)
